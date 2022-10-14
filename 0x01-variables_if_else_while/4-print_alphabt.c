@@ -8,12 +8,20 @@
  */
 int main(void)
 {
-	char low;
+	int letter;
 
-	for (low = 'a'; low <= 'z'; low++)
-		if (low == 'q' || low == 'e')
-			continue;
-				putchar(low);
+	while (letter <= 'z')
+	{
+		if(letter == 'e' || letter == 'q')
+		{
+			letter += 1;
+		}
+		else
+		{
+			putchar(letter);
+			letter += 1;
+		}
+	}
 	putchar('\n');
 	return (0);
 }
